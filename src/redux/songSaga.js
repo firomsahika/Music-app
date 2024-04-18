@@ -1,5 +1,6 @@
 import {put , takeLatest, call, select} from "redux-saga/effects";
 import axios from 'axios';
+import { fetchSongsFailure,fetchSongsSuccess } from "./feature/songSlice";
 
 const API_ENDPOINT = 'https://api.spotify.com/v1';
 
@@ -10,16 +11,15 @@ export const fetchDataRequest = () => ({
 
 function* fetchSongs(action){
     try{
-      const accessToken = yield select((state)=>state.auth.accessToken);
-      const response = yield call(axios.get,`${API_ENDPOINT}/search?q=${action.payload}&type=track`,{
-        headers: {
-            Authorization: `Bearer ${accessToken}`
-        },
+      // const accessToken = yield select((state)=>state.auth.accessToken);
+      const response = yield call(axios.get,'http://localhost:3000/tracks',{
       });
-      yield put(fetchSongSuccess(response.data.tracks.items));
+      console.log(response.data)
+      yield put(fetchSongsSuccess(response.data));
 
     }catch(error){
-        yield put(fetchSongsFailure(error));
+        console.error("Fatch error");
+        yield put(fetchSongsFailure({ message: error.message }));
 
     }
 }

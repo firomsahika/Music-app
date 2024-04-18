@@ -8,8 +8,11 @@ const Container = styled.div`
   justify-content: space-between;
   align-items:center;
   margin: 0 auto;
-  padding: 0; /* Adjusted padding */
+  padding:0 40px; /* Adjusted padding */
+  background-color:#212121;
+  z-index:10;
   
+
   input{
     border:none;
     position:relative;

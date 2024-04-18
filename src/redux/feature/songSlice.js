@@ -4,6 +4,7 @@ const songSlice = createSlice({
     name:'song',
     initialState:{
         songsList:[],
+        albumList:[],
         song:{},
         error:null
 
@@ -17,9 +18,17 @@ const songSlice = createSlice({
             state.error= action.payload.err;
             state.songsList = null;
         },
+        fetchAlbumSuccess:(state,action)=>{
+           state.albumList = action.payload;
+           state.error = null;
+        },
+        fetchAlbumFailure:(state,action)=>{
+            state.error = action.payload.err;
+            state.albumList = null;
+         }
         
     }
 })
 
-export const {fetchSongsFailure, fetchSongsSuccess}  = songSlice.actions;
+export const {fetchSongsFailure, fetchSongsSuccess,fetchAlbumFailure,fetchAlbumSuccess}  = songSlice.actions;
 export default songSlice.reducer;

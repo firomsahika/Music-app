@@ -1,5 +1,4 @@
 
-import './App.css'
 import HomePage from './pages/HomePage'
 import GlobalStyle from './styles/Global.styled'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -21,8 +20,8 @@ function App() {
         <Header />
         <SideBar />
           <Routes>
-            <Route exact path='/' Component={LoginPage}/>
-            <Route  path='/home' Component={HomePage} />
+            {/* <Route exact path='/' Component={LoginPage}/> */}
+            <Route  path='/' Component={HomePage} />
             <Route path='/album' Component={Album}/>
             <Route path='/createsong' Component={CreateSong}/>
             <Route path='/favorite' Component={Favorite}/>
