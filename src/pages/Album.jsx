@@ -3,6 +3,25 @@ import Content from '../styles/Home/HomeContainer.styled'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDataRequest } from '../redux/songSaga'
 import { fetchAlbumRequest } from '../redux/albumFetchSaga'
+import styled from 'styled-components'
+
+const SongList = styled.div`
+display: grid;
+background-color: #212121;
+grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
+grid-gap: 20px;
+border-radius:14px;
+padding:10px;
+align-items:center;
+justify-content:center;
+img{
+  object-fit:cover;
+  width:190px;
+  height:150px;
+  border-radius:8px;
+}
+
+`
 
 const Album = () => {
 
@@ -17,7 +36,7 @@ const Album = () => {
 
   return (
     <Content>
-       <div >
+       <SongList >
         {
           albumLists.map((musicdata)=>(
             <div style={{backgroundColor:'#000000',paddingLeft:'2px',display:'flex',flexDirection:'column',fontSize:'13px'}}>
@@ -29,7 +48,7 @@ const Album = () => {
           ))
         }
 
-       </div>
+       </SongList>
     </Content>
   )
 }

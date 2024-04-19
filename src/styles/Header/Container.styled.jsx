@@ -15,6 +15,7 @@ const Container = styled.div`
 
   input{
     border:none;
+    color:black
     position:relative;
     padding:10px;
     font-family:Poppins;
@@ -22,7 +23,8 @@ const Container = styled.div`
     border-radius:10px;
     font-family: "Poppins";
     display:flex;
-    background-color: #F0F0F5;
+    // background-color: #F0F0F5;
+    background-color:#FFC100;
     align-items:center;
     justify-content:center;
     font-size:14px;
@@ -30,7 +32,9 @@ const Container = styled.div`
   
   input::placeholder{
     display:flex;
-    font-size:16px;
+    color:black;
+    font-weight:semibold;
+    font-size:18px;
     align-items:center;
     justify-content:center;
   }

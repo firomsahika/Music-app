@@ -25,7 +25,7 @@ function App() {
             <Route path='/album' Component={Album}/>
             <Route path='/createsong' Component={CreateSong}/>
             <Route path='/favorite' Component={Favorite}/>
-            <Route path='/songdetail' Component={SongDetail}/>
+            <Route path='/song/:id' Component={SongDetail}/>
             <Route path='/movie/:id'/>
           </Routes>
         
