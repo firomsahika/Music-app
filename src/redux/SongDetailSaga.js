@@ -1,18 +1,18 @@
-import {put , takeLatest, call, select} from "redux-saga/effects";
+import {put , takeLatest, call} from "redux-saga/effects";
 import axios from 'axios';
 import { SongDetailFailure, SongDetailSuccess } from "./feature/songDetailSlice";
 
 
-export const fetchDetailSong = (songId) => ({
+export const fetchDetailSong = (id) => ({
     type: 'FETCH_SONG_REQUEST',
-    payload: {songId},
+    payload: {id},
   });
 
 function* fetchSong(action) {
     try {
-        const  {songId}  = action.payload;
-        const response = yield call(axios.get, 
-          `http://localhost:3000/tracks/${songId}`);
+        const  {id}  = action.payload;
+        const songId = id.replace(":", "");
+        const response = yield call(axios.get,`http://localhost:3000/tracks/${songId}`);
 
         yield put(SongDetailSuccess(response.data));
     } catch (error) {

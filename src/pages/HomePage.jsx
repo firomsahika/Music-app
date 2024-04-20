@@ -50,7 +50,7 @@ const HomePage = () => {
         {
           songLists.map((musicdata)=>(
             <StyledNavLink to={`/song/:${musicdata.id}`}>
-              <div style={{backgroundColor:'#000000',paddingLeft:'5px',display:'flex',flexDirection:'column',fontSize:'13px',borderRadius:'10px'}}>
+              <div key={musicdata.id} style={{backgroundColor:'#000000',paddingLeft:'5px',display:'flex',flexDirection:'column',fontSize:'13px',borderRadius:'10px'}}>
               <img src={musicdata.imageUrl} alt="photos" />
               <p style={{margin:'0',padding:'0 4px',fontSize:'15px'}}>{musicdata.nameofSinger}</p>
               <p style={{margin:'0',padding:'4px'}}>Title :  {musicdata.title}</p>

@@ -11,10 +11,15 @@ const songDetailSlice = createSlice({
     name: 'songDetail',
     initialState,
     reducers: {
-    
+        songDetailRequest: (state) => {
+            state.loading = true;
+            state.error = null;
+        },
+
         SongDetailSuccess: (state, action) => {
+            console.log("Action Payload:", action.payload);
             state.loading = false;
-            state.song = action.payload; // Update state with the fetched song detail data
+            state.song = action.payload;
         },
         SongDetailFailure: (state, action) => {
             state.loading = false;
