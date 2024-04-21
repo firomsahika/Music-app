@@ -12,7 +12,8 @@ display: grid;
 background-color: #212121;
 grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
 grid-gap: 30px;
-color:#FFC100;
+// color:#FFC100;
+color: #bababa;
 border-radius:40px;
 padding:16px;
 align-items:center;

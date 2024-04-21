@@ -4,14 +4,14 @@ import { deleteSongFailure,deleteSongSuccess } from "./feature/deleteSongSlice";
 
 export const deleteSongRequest = (id) =>({
     type:'DELETE_SONG',
-    payload: id,
+    payload: {id},
 })
 
 function* deleteSong(action){
     try {
         const { id } = action.payload;
-         //const songId = id.replace(":", "");
-        const response = yield call(axios.delete, `https://localhost:3000/tracks/${id}`);
+        const songId = id.replace(":", "");
+        const response = yield call(axios.delete, `http://localhost:3000/tracks/${songId}`);
         yield put(deleteSongSuccess(response.data));
         
     } catch (error) {

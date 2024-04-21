@@ -5,14 +5,14 @@
       "nameofSinger": "Alice Smith",
       "title": "Sunrise",
       "produceddate": "2022-01-05",
-      "genre":"Rock",
+      "genre": "Rock",
       "imageUrl": "https://img.freepik.com/free-photo/passionate-black-male-singer-performing-against-red_1258-26297.jpg?t=st=1713472736~exp=1713476336~hmac=e0e38045804538e060618ae33e43b8f35836793a1dd6f5e82a76a9a402a238d6&w=826"
     },
     {
       "id": "2",
       "nameofSinger": "Bob Johnson",
       "title": "Moonlight Sonata",
-      "genre":"Pop",
+      "genre": "Pop",
       "produceddate": "2022-01-10",
       "imageUrl": "https://img.freepik.com/free-photo/black-model-posing_23-2148171760.jpg?t=st=1713473392~exp=1713476992~hmac=e892d6a6a5ee64b507773f4390f5017851ae9a4b2f8306ddecb336e9373f2a68&w=360"
     },
@@ -21,7 +21,7 @@
       "nameofSinger": "Emma Brown",
       "title": "Starry Night",
       "produceddate": "2022-01-15",
-      "genre":"Hiphop",
+      "genre": "Hiphop",
       "imageUrl": "https://img.freepik.com/free-photo/young-african-man-singing-microphone-white_176420-4934.jpg?t=st=1713473780~exp=1713477380~hmac=169ab4435fa49484e1e44f177fefa452cc4800e8c7b766866c47f2fc5f6a9a29&w=826"
     },
     {
@@ -29,7 +29,7 @@
       "nameofSinger": "David Wilson",
       "title": "Ocean Waves",
       "produceddate": "2022-01-20",
-      "genre":"Rock",
+      "genre": "Rock",
       "imageUrl": "https://img.freepik.com/free-photo/black-boy-posing-with-headphones_23-2148171536.jpg?t=st=1713473803~exp=1713477403~hmac=8a05ee0dba81925a457dbf6554c691ee79f6edaf42ecf0e7b2e9cb8d25049f1e&w=826"
     },
     {
@@ -37,14 +37,14 @@
       "nameofSinger": "Sophia Taylor",
       "title": "Mountain Peak",
       "produceddate": "2022-01-25",
-      "genre":"Pop",
+      "genre": "Pop",
       "imageUrl": "https://img.freepik.com/free-photo/black-boy-playing-guitar_23-2148171750.jpg?t=st=1713473834~exp=1713477434~hmac=115eb9e71d65d40c1e81a5938179d8fa3c73ac707674dac244d614803183bf61&w=360"
     },
     {
       "id": "6",
       "nameofSinger": "James Lee",
       "title": "Desert Sands",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-02-05",
       "imageUrl": "https://img.freepik.com/free-photo/young-adults-having-fun-open-mic_23-2149501544.jpg?t=st=1713473882~exp=1713477482~hmac=b59286b86107e777929b6383a5c1b0fecb1b100986e8681833e1f89a47697690&w=826"
     },
@@ -52,7 +52,7 @@
       "id": "7",
       "nameofSinger": "Olivia Rodriguez",
       "title": "City Lights",
-      "genre":"Hiphop",
+      "genre": "Hiphop",
       "produceddate": "2022-02-10",
       "imageUrl": "https://img.freepik.com/free-photo/young-handsome-happy-hipster-man-listening-music_155003-28264.jpg?t=st=1713473947~exp=1713477547~hmac=29b5771556d2b79754dc4f0be7612a9013703139c47c5ab32b48d6fa22bb94e9&w=826"
     },
@@ -60,7 +60,7 @@
       "id": "8",
       "nameofSinger": "William Martinez",
       "title": "Fire Dance",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-02-15",
       "imageUrl": "https://img.freepik.com/free-photo/world-theatre-day-celebration_23-2151185538.jpg?t=st=1713473972~exp=1713477572~hmac=e957097cb55d5a877e18929391fb5acbc1fee7d3241fc7501116df23413dbb31&w=826"
     },
@@ -69,7 +69,7 @@
       "nameofSinger": "Ava White",
       "title": "Rainforest Symphony",
       "produceddate": "2022-02-20",
-      "genre":"Rock",
+      "genre": "Rock",
       "imageUrl": "https://img.freepik.com/premium-photo/man-listening-music-headphones_114963-13207.jpg?w=360"
     },
     {
@@ -77,14 +77,14 @@
       "nameofSinger": "Liam Brown",
       "title": "Winter's Tale",
       "produceddate": "2022-02-25",
-      "genre":"Pop",
+      "genre": "Pop",
       "imageUrl": "https://img.freepik.com/premium-photo/young-africa-american-with-backpack-trekking-poles-isolated-blue-with-tired-sick-expression_1368-115309.jpg?w=826"
     },
     {
       "id": "11",
       "nameofSinger": "Charlotte Clark",
       "title": "Spring Blossoms",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-03-05",
       "imageUrl": "https://img.freepik.com/free-photo/young-sexy-couple-lovers-pose-night-street-city_1153-3429.jpg?t=st=1713473926~exp=1713477526~hmac=7aa3e7cd3137d347cfb26554561552fa441d93c65ac67b5e2af7a454bd73d2a5&w=360"
     },
@@ -93,7 +93,7 @@
       "nameofSinger": "Ethan Adams",
       "title": "Autumn Leaves",
       "produceddate": "2022-03-10",
-      "genre":"Pop",
+      "genre": "Pop",
       "imageUrl": "https://img.freepik.com/free-psd/music-channel-podcast-cover-template_23-2151409752.jpg?t=st=1713474144~exp=1713477744~hmac=1d6c96c80e637a0387d3f1f48c0923d89c59a4dd08a575cf96dd6748bb6ab163&w=740"
     },
     {
@@ -101,14 +101,14 @@
       "nameofSinger": "Amelia Green",
       "title": "Summer Breeze",
       "produceddate": "2022-03-15",
-      "genre":"Rock",
+      "genre": "Rock",
       "imageUrl": "https://img.freepik.com/free-photo/young-man-with-closed-eyes-listening-music-headphones_23-2148205502.jpg?t=st=1713474168~exp=1713477768~hmac=cb2ccce8f8405479b4a4f88f28ecc7f81314e43da65661527bcc089a1ef0e408&w=826"
     },
     {
       "id": "14",
       "nameofSinger": "Benjamin Perez",
       "title": "Golden Fields",
-      "genre":"Pop",
+      "genre": "Pop",
       "produceddate": "2022-03-20",
       "imageUrl": "https://img.freepik.com/free-photo/african-american-man-s-portrait-isolated-gradient-wall-neon-light_155003-4242.jpg?t=st=1713474203~exp=1713477803~hmac=627108826a05b724bab42de137b3ae582f1ab694529668468c9b0401754d2c0c&w=826"
     },
@@ -116,7 +116,7 @@
       "id": "15",
       "nameofSinger": "Mia Evans",
       "title": "Crystal Lake",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-03-25",
       "imageUrl": "https://img.freepik.com/premium-photo/portrait-young-man-holding-hands_1048944-12768790.jpg?w=740"
     },
@@ -125,14 +125,14 @@
       "nameofSinger": "Henry King",
       "title": "Eternal Flame",
       "produceddate": "2022-04-05",
-      "genre":"Hiphop",
+      "genre": "Hiphop",
       "imageUrl": "https://img.freepik.com/premium-photo/young-african-man-using-mobile-with-headphones-dancing-isolated-white-background_650366-4697.jpg?w=826"
     },
     {
       "id": "17",
       "nameofSinger": "Emily Scott",
       "title": "Twilight Serenade",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-04-10",
       "imageUrl": "https://img.freepik.com/free-photo/portrait-young-man-listening-music_23-2148328931.jpg?t=st=1713474272~exp=1713477872~hmac=a7c0862cc80788742be1f3dd09bfe92df2688942c89f1de1994a3851c21d6910&w=740"
     },
@@ -140,7 +140,7 @@
       "id": "18",
       "nameofSinger": "Alexander Turner",
       "title": "Dreamer's Lullaby",
-      "genre":"Rock",
+      "genre": "Rock",
       "produceddate": "2022-04-15",
       "imageUrl": "https://img.freepik.com/free-photo/medium-shot-man-with-thumbs-down_23-2149943813.jpg?t=st=1713474305~exp=1713477905~hmac=10972285bc979d1c714b1b1f8abc50a479bfea78955307351692dea5520cb4fb&w=826"
     },
@@ -148,7 +148,7 @@
       "id": "19",
       "nameofSinger": "Ella Lewis",
       "title": "Starlight Symphony",
-      "genre":"Pop",
+      "genre": "Pop",
       "produceddate": "2022-04-20",
       "imageUrl": "https://img.freepik.com/premium-photo/portrait-young-man-hip-hop-artist-singing-into-condenser-microphone-while-recording-song_386185-1225.jpg?w=826"
     },
@@ -157,23 +157,8 @@
       "nameofSinger": "Noah Hughes",
       "title": "Ocean Waves",
       "produceddate": "2022-04-25",
-      "genre":"Hiphop",
+      "genre": "Hiphop",
       "imageUrl": "https://img.freepik.com/free-photo/process-creating-stand-up-comedy_23-2151058876.jpg?t=st=1713474374~exp=1713477974~hmac=34d58527ad30e0615e8842a9ea897745a0a8d016c2e402197c037396b16aaa2a&w=826"
-    },
-    {
-      "id": "30cb"
-    },
-    {
-      "id": "2f86"
-    },
-    {
-      "id": "f0a8"
-    },
-    {
-      "id": "6e10"
-    },
-    {
-      "id": "4cd6"
     },
     {
       "id": "d23d",
@@ -197,18 +182,6 @@
       "nameofSinger": "Kylian Abdrew",
       "produceddate": "2024-04-30",
       "imageUrl": "https://img.freepik.com/premium-photo/man-posing-photos-hip-hop-clothing-generative-ai_7023-108888.jpg?w=360"
-    },
-    {
-      "id": "aafc",
-      "singer": "",
-      "title": "One day",
-      "releaseDate": "",
-      "description": "klnasdn;ajs",
-      "genre": "Pop",
-      "file": "",
-      "nameofSinger": "Kylian Abdrew",
-      "produceddate": "2024-04-24",
-      "imageUrl": "https://img.freepik.com/free-photo/cool-hip-hop-young-man-white_1385-882.jpg?t=st=1713529567~exp=1713533167~hmac=dc440016fa0c48f557cfc2eb68ca568b80ea4993a845bf0a7bc3078faff580ab&w=740"
     }
   ],
   "albums": [
@@ -217,7 +190,7 @@
       "title": "Sunset Serenade",
       "artist": "Artist 1",
       "nameofSinger": "Alice Smith",
-      "genre":"Rock",
+      "genre": "Rock",
       "releaseDate": "2022-01-01",
       "imageUrl": "https://img.freepik.com/premium-photo/portrait-young-african-american-man-with-headphones_23-2148932781.jpg?w=900"
     },
@@ -234,7 +207,7 @@
       "title": "Starry Nights",
       "artist": "Artist 3",
       "nameofSinger": "Emma Brown",
-      "genre":"Pop",
+      "genre": "Pop",
       "releaseDate": "2022-01-10",
       "imageUrl": "https://img.freepik.com/free-photo/beautiful-black-young-woman-with-music-plate-colored-background_23-2148183311.jpg?t=st=1713474461~exp=1713478061~hmac=b16ef9d7e27840ec26a7dd87fcc46c414236a337a751a2686b01090d9c34fd8a&w=740"
     },

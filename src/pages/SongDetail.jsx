@@ -7,8 +7,8 @@ import { fetchDataRequest } from '../redux/songSaga'
 import { fetchDetailSong } from '../redux/SongDetailSaga'
 import { songDetailRequest } from '../redux/feature/songDetailSlice'
 import { deleteSongRequest } from '../redux/deleteSongSaga'
-
-
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const DetailWrapper = styled.div`
   display:flex;
@@ -61,8 +61,8 @@ const SongDetail = () => {
   console.log(song);
 
   const handleDelete = () =>{
-    dispatch(deleteSongRequest(song.id));
-
+    dispatch(deleteSongRequest(id));
+    
   }
 
   return (
@@ -78,7 +78,9 @@ const SongDetail = () => {
           <p>Produced-Date : {song.produceddate}</p>
 
           <Button style={{marginRight:'10px'}}>Update</Button>
+          <Link to="/">
           <Button onClick={handleDelete}>Delete</Button>
+          </Link>
         </div>
         
        </DetailWrapper>
