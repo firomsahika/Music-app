@@ -9,6 +9,7 @@ import { songDetailRequest } from '../redux/feature/songDetailSlice'
 import { deleteSongRequest } from '../redux/deleteSongSaga'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { updateSongRequest } from '../redux/updateSongSaga'
 
 const DetailWrapper = styled.div`
   display:flex;
@@ -62,7 +63,9 @@ const SongDetail = () => {
 
   const handleDelete = () =>{
     dispatch(deleteSongRequest(id));
-    
+  }
+  const handleUpdate = () =>{
+    dispatch(updateSongRequest(id));
   }
 
   return (
@@ -77,7 +80,11 @@ const SongDetail = () => {
           <p>Genre : {song.genre}</p>
           <p>Produced-Date : {song.produceddate}</p>
 
-          <Button style={{marginRight:'10px'}}>Update</Button>
+          <Link to='/update-song/:id'>
+             <Button 
+             onClick={handleUpdate}
+             style={{marginRight:'10px'}}>Update</Button>
+          </Link>
           <Link to="/">
           <Button onClick={handleDelete}>Delete</Button>
           </Link>

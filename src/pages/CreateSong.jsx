@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Content from '../styles/Home/HomeContainer.styled';
 import { createSongRequest } from '../redux/feature/createSongSaga';
 import { useDispatch } from 'react-redux';
+import { Navigate, useNavigate } from 'react-router-dom';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,9 +16,10 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
     flex-direction: column;
-    gap:50px;
+    gap:30px;
     max-width: 600px; /* Adjust max-width as needed */
     width: 100%;
+    height:71.8vh;
   }
 `;
 
@@ -75,6 +77,7 @@ const Button = styled.button`
 `;
 
 const CreateSong = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     singer: '',
@@ -94,6 +97,7 @@ const CreateSong = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createSongRequest(formData));
+    navigate('/');
     setFormData({
       nameofsinger: '',
       title: '',

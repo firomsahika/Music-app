@@ -17,12 +17,7 @@
       "imageUrl": "https://img.freepik.com/free-photo/black-model-posing_23-2148171760.jpg?t=st=1713473392~exp=1713476992~hmac=e892d6a6a5ee64b507773f4390f5017851ae9a4b2f8306ddecb336e9373f2a68&w=360"
     },
     {
-      "id": "3",
-      "nameofSinger": "Emma Brown",
-      "title": "Starry Night",
-      "produceddate": "2022-01-15",
-      "genre": "Hiphop",
-      "imageUrl": "https://img.freepik.com/free-photo/young-african-man-singing-microphone-white_176420-4934.jpg?t=st=1713473780~exp=1713477380~hmac=169ab4435fa49484e1e44f177fefa452cc4800e8c7b766866c47f2fc5f6a9a29&w=826"
+      "id": "3"
     },
     {
       "id": "4",
@@ -182,6 +177,18 @@
       "nameofSinger": "Kylian Abdrew",
       "produceddate": "2024-04-30",
       "imageUrl": "https://img.freepik.com/premium-photo/man-posing-photos-hip-hop-clothing-generative-ai_7023-108888.jpg?w=360"
+    },
+    {
+      "id": "d44a",
+      "singer": "",
+      "title": "New Song",
+      "releaseDate": "",
+      "description": "This is a song by kylian dev",
+      "genre": "",
+      "file": "",
+      "nameofSinger": "Kylan Dev",
+      "produceddate": "2024-05-10",
+      "imageUrl": "https://img.freepik.com/premium-psd/crazy-cool-hipster-african-american-guy-pretending-playing-guitar-having-fun_76964-38650.jpg?w=740"
     }
   ],
   "albums": [

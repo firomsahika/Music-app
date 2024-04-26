@@ -10,6 +10,7 @@ import SideBar from './components/SideBar'
 import Header from './components/Header'
 import Movie from './pages/Movie'
 import LoginPage from './pages/LoginPage'
+import UpdateSong from './pages/UpdateSong'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path='/createsong' Component={CreateSong}/>
             <Route path='/favorite' Component={Favorite}/>
             <Route path='/song/:id' Component={SongDetail}/>
+            <Route path="/update-song/:id" Component={UpdateSong}/>
             <Route path='/movie/:id'/>
           </Routes>
         
