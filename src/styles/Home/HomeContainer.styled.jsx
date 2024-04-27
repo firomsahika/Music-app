@@ -7,6 +7,7 @@ padding-top:22px;
 width: 85%;
 color:white;
 z-index:0;
+color:#989898;
 
 
 

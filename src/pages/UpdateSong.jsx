@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Content from '../styles/Home/HomeContainer.styled';
 import { createSongRequest } from '../redux/feature/createSongSaga';
 import { useDispatch,useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { updateSongRequest } from '../redux/updateSongSaga';
 const Container = styled.div`
   display: flex;
@@ -80,6 +80,7 @@ const Button = styled.button`
 
 const UpdateSong = () => {
   const {id} = useParams();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const song = useSelector((state) => state.updateSong.songList.find((song) => song.id === id)) || {}; // Corrected naming here
 
@@ -98,7 +99,9 @@ const UpdateSong = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(updateSongRequest(id,formData));
+    dispatch(updateSongRequest(id, formData));
+    navigate("/");
+
   };
 
   return (

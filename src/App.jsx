@@ -4,13 +4,11 @@ import GlobalStyle from './styles/Global.styled'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Album from './pages/Album'
 import CreateSong from './pages/CreateSong'
-import Favorite from './pages/Favorite'
 import SongDetail from './pages/SongDetail'
 import SideBar from './components/SideBar'
 import Header from './components/Header'
-import Movie from './pages/Movie'
-import LoginPage from './pages/LoginPage'
-import UpdateSong from './pages/UpdateSong'
+import UpdateSong from './pages/UpdateSong';
+import Favorite from './pages/Favorite'
 
 
 function App() {
@@ -28,7 +26,8 @@ function App() {
             <Route path='/favorite' Component={Favorite}/>
             <Route path='/song/:id' Component={SongDetail}/>
             <Route path="/update-song/:id" Component={UpdateSong}/>
-            <Route path='/movie/:id'/>
+            <Route path='/movie/:id' 
+            />
           </Routes>
         
         </div>

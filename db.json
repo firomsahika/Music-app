@@ -17,23 +17,20 @@
       "imageUrl": "https://img.freepik.com/free-photo/black-model-posing_23-2148171760.jpg?t=st=1713473392~exp=1713476992~hmac=e892d6a6a5ee64b507773f4390f5017851ae9a4b2f8306ddecb336e9373f2a68&w=360"
     },
     {
-      "id": "3"
+      "nameofSinger": "Mores bright",
+      "title": "hello",
+      "produceddate": "2024-05-04",
+      "description": "dfdsafs",
+      "imageUrl": "https://img.freepik.com/free-photo/cool-young-hip-hop-man-white-background_1385-860.jpg?t=st=1713732548~exp=1713736148~hmac=f6c9c808f57a9895b02863badf7c0cbf6807d95558d670c14e08fb6a2cf531f4&w=826",
+      "id": "4"
     },
     {
-      "id": "4",
-      "nameofSinger": "David Wilson",
-      "title": "Ocean Waves",
-      "produceddate": "2022-01-20",
-      "genre": "Rock",
-      "imageUrl": "https://img.freepik.com/free-photo/black-boy-posing-with-headphones_23-2148171536.jpg?t=st=1713473803~exp=1713477403~hmac=8a05ee0dba81925a457dbf6554c691ee79f6edaf42ecf0e7b2e9cb8d25049f1e&w=826"
-    },
-    {
-      "id": "5",
-      "nameofSinger": "Sophia Taylor",
-      "title": "Mountain Peak",
-      "produceddate": "2022-01-25",
-      "genre": "Pop",
-      "imageUrl": "https://img.freepik.com/free-photo/black-boy-playing-guitar_23-2148171750.jpg?t=st=1713473834~exp=1713477434~hmac=115eb9e71d65d40c1e81a5938179d8fa3c73ac707674dac244d614803183bf61&w=360"
+      "nameofSinger": "Josh Anvy",
+      "title": "this is my titile",
+      "description": "A song by josh anvy",
+      "produceddate": "2024-05-03",
+      "imageUrl": "https://img.freepik.com/premium-photo/profile-picture-man-listen-music-use-headphone-logo-illustration-art_1020867-106527.jpg?w=740",
+      "id": "5"
     },
     {
       "id": "6",
@@ -52,12 +49,12 @@
       "imageUrl": "https://img.freepik.com/free-photo/young-handsome-happy-hipster-man-listening-music_155003-28264.jpg?t=st=1713473947~exp=1713477547~hmac=29b5771556d2b79754dc4f0be7612a9013703139c47c5ab32b48d6fa22bb94e9&w=826"
     },
     {
-      "id": "8",
-      "nameofSinger": "William Martinez",
-      "title": "Fire Dance",
-      "genre": "Rock",
-      "produceddate": "2022-02-15",
-      "imageUrl": "https://img.freepik.com/free-photo/world-theatre-day-celebration_23-2151185538.jpg?t=st=1713473972~exp=1713477572~hmac=e957097cb55d5a877e18929391fb5acbc1fee7d3241fc7501116df23413dbb31&w=826"
+      "nameofSinger": "Drake ",
+      "title": "New SOng ",
+      "produceddate": "2024-05-10",
+      "description": "asdasnd",
+      "imageUrl": "https://img.freepik.com/free-photo/curly-woman-singing-microphone-indoors_23-2148628920.jpg?t=st=1714258922~exp=1714262522~hmac=147ab20ee3a271b438336feb48811f0857b2604b3febc92b4bd877f5cfa67b17&w=360",
+      "id": "8"
     },
     {
       "id": "9",
@@ -140,20 +137,20 @@
       "imageUrl": "https://img.freepik.com/free-photo/medium-shot-man-with-thumbs-down_23-2149943813.jpg?t=st=1713474305~exp=1713477905~hmac=10972285bc979d1c714b1b1f8abc50a479bfea78955307351692dea5520cb4fb&w=826"
     },
     {
-      "id": "19",
-      "nameofSinger": "Ella Lewis",
-      "title": "Starlight Symphony",
-      "genre": "Pop",
-      "produceddate": "2022-04-20",
-      "imageUrl": "https://img.freepik.com/premium-photo/portrait-young-man-hip-hop-artist-singing-into-condenser-microphone-while-recording-song_386185-1225.jpg?w=826"
+      "nameofSinger": "Justin Bieber",
+      "title": "he",
+      "produceddate": "2024-05-11",
+      "description": "jsvdsadvhsabd",
+      "imageUrl": "https://img.freepik.com/free-photo/black-model-posing_23-2148171722.jpg?t=st=1714215860~exp=1714219460~hmac=87c76fcbbb843c82be4eb62df1d4648111358781008e372be1e22c6ddc6ebaa2&w=360",
+      "id": "19"
     },
     {
-      "id": "20",
-      "nameofSinger": "Noah Hughes",
-      "title": "Ocean Waves",
-      "produceddate": "2022-04-25",
-      "genre": "Hiphop",
-      "imageUrl": "https://img.freepik.com/free-photo/process-creating-stand-up-comedy_23-2151058876.jpg?t=st=1713474374~exp=1713477974~hmac=34d58527ad30e0615e8842a9ea897745a0a8d016c2e402197c037396b16aaa2a&w=826"
+      "nameofSinger": "Tyla brun",
+      "title": "What'sup ",
+      "produceddate": "2024-04-26",
+      "description": "asdsfsdfdgfdgcvx",
+      "imageUrl": "https://img.freepik.com/premium-photo/breakdancer-cartoon-character-3d-animation-illustration-guide_1029473-45911.jpg?w=360",
+      "id": "20"
     },
     {
       "id": "d23d",
@@ -167,28 +164,24 @@
       "imageUrl": "https://img.freepik.com/free-photo/cool-hip-hop-young-man-white_1385-882.jpg?t=st=1713529567~exp=1713533167~hmac=dc440016fa0c48f557cfc2eb68ca568b80ea4993a845bf0a7bc3078faff580ab&w=740"
     },
     {
-      "id": "ed1d",
-      "singer": "",
-      "title": "Calm Down",
-      "releaseDate": "",
-      "description": "dfl/ljsa",
-      "genre": "AfroBit",
-      "file": "",
-      "nameofSinger": "Kylian Abdrew",
-      "produceddate": "2024-04-30",
-      "imageUrl": "https://img.freepik.com/premium-photo/man-posing-photos-hip-hop-clothing-generative-ai_7023-108888.jpg?w=360"
+      "nameofSinger": "Babe",
+      "title": "heajskn",
+      "produceddate": "2024-04-25",
+      "description": "lkdsfnsakjfn",
+      "imageUrl": "https://img.freepik.com/free-photo/medium-shot-man-with-confetti_23-2149004905.jpg?t=st=1714225427~exp=1714229027~hmac=17d687c98f945eb07179c42c184ea19d21f44414c1f2cd49b76303ad31dc7007&w=360",
+      "id": "d44a"
     },
     {
-      "id": "d44a",
+      "id": "e9d9",
       "singer": "",
-      "title": "New Song",
+      "title": "hello",
       "releaseDate": "",
-      "description": "This is a song by kylian dev",
+      "description": "fsthis is ",
       "genre": "",
       "file": "",
-      "nameofSinger": "Kylan Dev",
-      "produceddate": "2024-05-10",
-      "imageUrl": "https://img.freepik.com/premium-psd/crazy-cool-hipster-african-american-guy-pretending-playing-guitar-having-fun_76964-38650.jpg?w=740"
+      "nameofSinger": "hey",
+      "produceddate": "2024-05-02",
+      "imageUrl": "https://img.freepik.com/free-photo/cool-hip-hop-young-man-white_1385-909.jpg?t=st=1714225559~exp=1714229159~hmac=ed0b425f00539891916454ddd405e0e9a366047ab9c351502a709ab6c1b310a4&w=360"
     }
   ],
   "albums": [

@@ -6,6 +6,7 @@ import DeleteSongReducer from "./feature/deleteSongSlice"
 import authreducer from './feature/authSlice'
 import SongDetailReducer from "./feature/songDetailSlice"
 import updateSongReducer from "./feature/updateSongSlice"
+import favoriteReducer from "./feature/favoriteSlice"
 import { watchFetchSongs } from "./songSaga";
 import { watchCreateSong } from "./feature/createSongSaga";
 import { watchFetchAlbums } from "./albumFetchSaga";
@@ -23,6 +24,7 @@ const store = configureStore({
     songDetail:SongDetailReducer,
     deleteSong: DeleteSongReducer,
     updateSong: updateSongReducer,
+    favorite: favoriteReducer,
     auth: authreducer,
   },
   middleware: (getDefaultMiddleware) => {

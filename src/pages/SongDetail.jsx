@@ -18,7 +18,7 @@ const DetailWrapper = styled.div`
   gap:40px;
   color:white;
   background-color: black;
-  height:84vh;
+  height:87vh;
   
   img{
     width:300px;
@@ -80,7 +80,7 @@ const SongDetail = () => {
           <p>Genre : {song.genre}</p>
           <p>Produced-Date : {song.produceddate}</p>
 
-          <Link to='/update-song/:id'>
+          <Link to={`/update-song/${id}`}>
              <Button 
              onClick={handleUpdate}
              style={{marginRight:'10px'}}>Update</Button>

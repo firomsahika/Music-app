@@ -4,7 +4,6 @@ const initialState = {
     songList : [],
     loading:false,
     error:null
-
 }
 const updateSongSlice = createSlice({
     name:'updateSong',
@@ -12,7 +11,7 @@ const updateSongSlice = createSlice({
     reducers:{
         updateSongSuccess:(state, action) =>{
           const updatedSong = action.payload;
-          const index = state.songList.findIndex(song => song.id === updatedSong.id);
+          const index = state.songList.findIndex(song => song.id === updatedSong);
 
           if(index !== -1){
             state.songList[index] = updatedSong;

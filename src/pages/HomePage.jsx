@@ -1,17 +1,19 @@
+
+import Song from "../components/Song";
 import React, {  useEffect, useState } from 'react'
 import Content from '../styles/Home/HomeContainer.styled'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDataRequest } from '../redux/songSaga'
-import {AlbumWrapper} from '../styles/Home/AlbumWrapper.styled'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
-
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { incrementFavoriteCount } from "../redux/feature/favoriteSlice";
 
 const SongList = styled.div`
 display: grid;
 background-color: #212121;
+min-width:85%;
 grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
-grid-gap: 30px;
+grid-gap: 10px;
 // color:#FFC100;
 color: #bababa;
 border-radius:40px;
@@ -32,39 +34,30 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 
+
+
+
 const HomePage = () => {
-
   const dispatch = useDispatch();
-  const songLists = useSelector((state)=> state.song.songsList);
+  const songLists = useSelector((state) => state.song.songsList);
 
-  useEffect(()=>{
-       dispatch(fetchDataRequest());
-  },[dispatch]);
+  const handleToggleFavorite = () => {
+    dispatch(incrementFavoriteCount());
+ };
 
-  console.log(songLists);
+  useEffect(() => {
+    dispatch(fetchDataRequest());
+  }, [dispatch]);
 
   return (
     <Content>
-  
-       <SongList >
-        
-        {
-          songLists.map((musicdata)=>(
-            <StyledNavLink to={`/song/:${musicdata.id}`}>
-              <div key={musicdata.id} style={{backgroundColor:'#000000',paddingLeft:'5px',display:'flex',flexDirection:'column',fontSize:'13px',borderRadius:'10px'}}>
-              <img src={musicdata.imageUrl} alt="photos" />
-              <p style={{margin:'0',padding:'0 4px',fontSize:'15px'}}>{musicdata.nameofSinger}</p>
-              <p style={{margin:'0',padding:'4px'}}>Title :  {musicdata.title}</p>
-              <p style={{margin:'0',padding:'4px'}}>Released : {musicdata.produceddate}</p>
-            </div>
-            </StyledNavLink>
-          ))
-        }
-
-       </SongList>
-      
+      <SongList>
+      {songLists.map((songData) => (
+        <Song key={songData.id} songData={songData} />
+      ))}
+      </SongList>
     </Content>
-  )
-}
+  );
+};
 
 export default HomePage;
