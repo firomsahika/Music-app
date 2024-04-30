@@ -41,9 +41,15 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const songLists = useSelector((state) => state.song.songsList);
 
-  const handleToggleFavorite = () => {
-    dispatch(incrementFavoriteCount());
- };
+  // const filteredSongs = songLists.filter(
+  //   (song) =>
+  //     song.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //     song.nameofSinger.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
+
+//   const handleToggleFavorite = () => {
+//     dispatch(incrementFavoriteCount());
+//  };
 
   useEffect(() => {
     dispatch(fetchDataRequest());
@@ -55,6 +61,9 @@ const HomePage = () => {
       {songLists.map((songData) => (
         <Song key={songData.id} songData={songData} />
       ))}
+
+    
+
       </SongList>
     </Content>
   );

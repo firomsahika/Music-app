@@ -6,6 +6,7 @@ import DeleteSongReducer from "./feature/deleteSongSlice"
 import authreducer from './feature/authSlice'
 import SongDetailReducer from "./feature/songDetailSlice"
 import updateSongReducer from "./feature/updateSongSlice"
+import searchSongReducer from "./feature/searchSong"
 import favoriteReducer from "./feature/favoriteSlice"
 import { watchFetchSongs } from "./songSaga";
 import { watchCreateSong } from "./feature/createSongSaga";
@@ -13,6 +14,7 @@ import { watchFetchAlbums } from "./albumFetchSaga";
 import { watchSongDetail } from "./SongDetailSaga";
 import { watchDeleteSong } from "./deleteSongSaga";
 import { watchUpdateSong } from "./updateSongSaga";
+import { watchSearch } from "./searchSongSaga";
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -23,6 +25,7 @@ const store = configureStore({
     createSong: CreateSongReducer,
     songDetail:SongDetailReducer,
     deleteSong: DeleteSongReducer,
+    searchSong: searchSongReducer,
     updateSong: updateSongReducer,
     favorite: favoriteReducer,
     auth: authreducer,
@@ -38,5 +41,6 @@ sagaMiddleware.run(watchCreateSong);
 sagaMiddleware.run(watchSongDetail);
 sagaMiddleware.run(watchDeleteSong);
 sagaMiddleware.run(watchUpdateSong);
+sagaMiddleware.run(watchSearch);
 
 export default store;

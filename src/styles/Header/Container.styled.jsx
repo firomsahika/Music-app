@@ -15,16 +15,17 @@ const Container = styled.div`
 
   input{
     border:none;
-    color:black
+    color:black;
     position:relative;
-    padding:10px;
+    padding:12px;
     font-family:Poppins;
     width: 25%; /* Adjusted width */
     border-radius:10px;
     font-family: "Poppins";
     display:flex;
     // background-color: #F0F0F5;
-    background-color:#FFC100;
+     background-color:#FFC100;
+
     align-items:center;
     justify-content:center;
     font-size:14px;

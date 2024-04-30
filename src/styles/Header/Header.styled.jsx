@@ -8,8 +8,8 @@ font-size:1.5rem;
 height:20px;
 position:fixed;
 top:0;
-
 min-width:100%;
+
 
 `
 export default StyledHeader;
