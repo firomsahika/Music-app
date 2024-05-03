@@ -23,8 +23,8 @@ const Container = styled.div`
     border-radius:10px;
     font-family: "Poppins";
     display:flex;
-    // background-color: #F0F0F5;
-     background-color:#FFC100;
+    background-color: #F0F0F5;
+     //background-color:#FFC100;
 
     align-items:center;
     justify-content:center;

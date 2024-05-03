@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { MdFavorite } from "react-icons/md";
-import { useDispatch } from 'react-redux';
-import { addToFavorite, decrementFavoriteCount, incrementFavoriteCount, removeFromFavorite } from '../redux/feature/favoriteSlice';
+import { useDispatch } from "react-redux";
+import {
+  addToFavorite,
+  decrementFavoriteCount,
+  incrementFavoriteCount,
+  removeFromFavorite,
+} from "../redux/feature/favoriteSlice";
+import FavBtn from "../styles/AddToFavoriite.styled";
 
 const FavoriteButton = ({ song }) => {
   const dispatch = useDispatch();
@@ -11,27 +17,35 @@ const FavoriteButton = ({ song }) => {
     setFavorite(!favorite);
     if (!favorite) {
       dispatch(addToFavorite(song));
-      dispatch(incrementFavoriteCount())
+      dispatch(incrementFavoriteCount());
     } else {
       dispatch(removeFromFavorite(song.id));
-      dispatch(decrementFavoriteCount())
+      dispatch(decrementFavoriteCount());
     }
   };
 
   return (
     <div>
-        <MdFavorite
+      {
+        
+        favorite ? <FavBtn
+        onClick={toggleFavorite}
+        size={30} 
+        style={{
+          backgroundColor:'red',
+          color:'white',
+        }}
+        >
+        Remove Favorite
+      </FavBtn> :
+      <FavBtn
       onClick={toggleFavorite}
-      size={30}
+      size={30} 
       
-      style={{
-        color: favorite ? '#ffa200' : 'gray',
-        cursor: 'pointer',
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center'
-      }}
-    />
+      >
+      Add To Favorite
+    </FavBtn>
+      }
     </div>
   );
 };

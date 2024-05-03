@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import Content from '../styles/Home/HomeContainer.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { incrementFavoriteCount , decrementFavoriteCount} from '../redux/feature/favoriteSlice';
+import FavBtn from '../styles/AddToFavoriite.styled';
 import { addToFavorite } from '../redux/feature/favoriteSlice';
 import FavoriteButton from './FavoriteButton';
 
@@ -56,9 +57,8 @@ const Song = ({ songData }) => {
                 >Title: {songData.title}</p>
                 <p>
                 Released: {songData.produceddate}{' '}
-                <FavoriteButton song={songData} 
-       
-                />
+                <FavoriteButton song={songData}  />
+              
                 </p>
         </div>
       </SongList>

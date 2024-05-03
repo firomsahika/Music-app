@@ -61,9 +61,6 @@ const HomePage = () => {
       {songLists.map((songData) => (
         <Song key={songData.id} songData={songData} />
       ))}
-
-    
-
       </SongList>
     </Content>
   );

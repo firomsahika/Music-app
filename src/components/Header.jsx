@@ -30,12 +30,12 @@ const Header = () => {
           value={searchQuery}
           onChange={(e) =>setSearchQuery(e.target.value)}
           placeholder="Search.."
-          style={{ backgroundColor: "", position:"relative", display:'flex', width:'20rem' }}
+          style={{ border:'4px solid white', position:"relative", display:'flex', width:'20rem' }}
         />
 
         <IoSearchCircleSharp  
         size={40}
-        style={{position:"absolute", color:'black', top:'22px', right:'33rem'}}
+        style={{position:"absolute", color:'black',top:'18px', right:'33rem'}}
         />
       </div>
         <div>
