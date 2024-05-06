@@ -12,7 +12,7 @@ background-color: #212121;
 grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
 grid-gap: 20px;
 border-radius:14px;
-padding:10px;
+padding:20px;
 align-items:center;
 justify-content:center;
 img{
@@ -20,6 +20,13 @@ img{
   width:190px;
   height:150px;
   border-radius:8px;
+}
+
+@media (max-width:768px){
+  margin-left:40px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+
 }
 
 `

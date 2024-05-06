@@ -9,11 +9,12 @@ const Container = styled.div`
   align-items:center;
   margin: 0 auto;
   padding-top:0px;
-padding-bottom:0px;
-padding-left:20px;
-padding-right:20px;
+  padding-bottom:0px;
+  padding-left:20px;
+  padding-right:20px;
   //padding:0 40px; /* Adjusted padding */
   background-color:#212121;
+  
   z-index:10;
   
 
@@ -27,6 +28,7 @@ padding-right:20px;
     border-radius:10px;
     font-family: "Poppins";
     display:flex;
+
     //background-color: #F0F0F5;
      //background-color:#FFC100;
 
@@ -47,7 +49,12 @@ padding-right:20px;
     border:none;
     outline:none;
   }
-
+  @media (max-width: 768px) {
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     height:70px;
+  }
 `
 
 export default Container

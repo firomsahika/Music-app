@@ -21,6 +21,15 @@ const Container = styled.div`
     width: 100%;
     height:71.8vh;
   }
+  @media (max-width:768px){
+    form{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:0;
+    height:100vh;
+    }
+
+  }
 `;
 
 const FormGroup = styled.div`
@@ -41,7 +50,6 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-
 
   &:focus{
     outline:none;

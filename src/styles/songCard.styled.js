@@ -8,11 +8,11 @@ display:flex;
 flex-direction:column;
 font-size:13px;
 border-radius:10px;
-transition:transform 0.3s ease;
+// transition:transform 0.3s ease;
 
-&:hover{
-    transform:scale(1.05);
-}
+// &:hover{
+//     transform:scale(1.02);
+// }
 
 `
 

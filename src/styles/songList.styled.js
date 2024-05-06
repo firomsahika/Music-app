@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const SongList = styled.div`
 display: grid;
-background-color: #212121;
+// background-color: #212121;
+background-color:#212121;
 min-width:85%;
 grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
 grid-gap: 10px;
@@ -19,6 +20,17 @@ img{
   border-radius:8px;
   padding-bottom:15px;
 }
+
+  @media (max-width: 768px) {
+    /* Adjust for smaller screens */
+      min-width: 100%;
+      margin:5px;
+      
+    grid-template-columns: repeat(2, 1fr); /* Three columns for smaller screens */
+    img{
+     min-width:100%;
+    }
+  }
 `
 
 export default SongList;

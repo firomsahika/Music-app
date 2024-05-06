@@ -61,7 +61,6 @@ const Song = ({ songData }) => {
                 <p>
                 Released: {songData.produceddate}{' '}
                 <FavoriteButton song={songData}  />
-              
                 </p>
         </SongCard>
       </SongList>
