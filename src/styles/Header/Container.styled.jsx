@@ -14,7 +14,6 @@ const Container = styled.div`
   padding-right:20px;
   //padding:0 40px; /* Adjusted padding */
   background-color:#212121;
-  
   z-index:10;
   
 

@@ -9,6 +9,7 @@ const Side = styled.div`
   padding: 0 30px;
   display: flex;
   flex-direction: column;
+  gap:20px;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 13px;
@@ -20,7 +21,7 @@ const Side = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 80px;
     color: white;
   }
   div:hover {

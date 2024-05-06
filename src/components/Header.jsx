@@ -86,7 +86,7 @@ const Header = () => {
             }}
           />
 
-          <IoSearchCircleSharp
+          {/* <IoSearchCircleSharp
             size={40}
             style={{
               position: "absolute",
@@ -94,7 +94,7 @@ const Header = () => {
               top: "22px",
               right: "28rem",
             }}
-          />
+          /> */}
         </div>
         <div>
           <div style={{ display: "flex",  ...(window.innerWidth <= 768 && { 
