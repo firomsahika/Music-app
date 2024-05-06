@@ -3,51 +3,15 @@ import Content from '../styles/Home/HomeContainer.styled'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { fetchDataRequest } from '../redux/songSaga'
-import { fetchDetailSong } from '../redux/SongDetailSaga'
+import { fetchDataRequest } from '../redux/sagas/songSaga'
+import { fetchDetailSong } from '../redux/sagas/SongDetailSaga'
 import { songDetailRequest } from '../redux/feature/songDetailSlice'
-import { deleteSongRequest } from '../redux/deleteSongSaga'
+import { deleteSongRequest } from '../redux/sagas/deleteSongSaga'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { updateSongRequest } from '../redux/updateSongSaga'
-
-const DetailWrapper = styled.div`
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:40px;
-  color:white;
-  background-color: black;
-  height:87vh;
-  
-  img{
-    width:300px;
-    height:350px;
-    object-fit:cover;
-    border-radius:15px;
-  }
-  p{
-    font-size:20px;
-    color:#FFC100;
-    
-  }
-`
-const Button = styled.button`
-  padding: 10px 20px;
-   background-color: #007bff;
-  // background-color:#FFC100;
-  color: white;
-  font-weight:semibold;
-  font-family:Poppins;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
+import { updateSongRequest } from '../redux/sagas/updateSongSaga'
+import DetailWrapper from '../styles/detailWrapper.styled'
+import Button from '../styles/button.styled'
 
 
 const SongDetail = () => {

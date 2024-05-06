@@ -1,6 +1,6 @@
 import {put , takeLatest, call} from "redux-saga/effects";
 import axios from 'axios';
-import { deleteSongFailure,deleteSongSuccess } from "./feature/deleteSongSlice";
+import { deleteSongFailure,deleteSongSuccess } from "../feature/deleteSongSlice";
 
 export const deleteSongRequest = (id) =>({
     type:'DELETE_SONG',

@@ -1,9 +1,10 @@
 import React, {  useEffect, useState } from 'react'
 import Content from '../styles/Home/HomeContainer.styled'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchDataRequest } from '../redux/songSaga'
-import { fetchAlbumRequest } from '../redux/albumFetchSaga'
+import { fetchDataRequest } from '../redux/sagas/songSaga'
+import { fetchAlbumRequest } from '../redux/sagas/albumFetchSaga'
 import styled from 'styled-components'
+
 
 const SongList = styled.div`
 display: grid;

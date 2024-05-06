@@ -6,6 +6,8 @@ import { MdFavorite } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { IoSearchCircleSharp } from "react-icons/io5";
+import logo from "../assets/addis.jpg"
+import { TbMusicHeart } from "react-icons/tb";
 
 
 const Header = () => {
@@ -13,29 +15,38 @@ const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const songLists = useSelector((state) => state.song.songsList);
   const favoriteCount = useSelector((state) => state.favorite.favoriteCount);
-
-  const filteredSong = songLists.filter(
-    (song) => song.title.toLowerCase().includes(searchQuery.toLowerCase()) 
-        ||
-           song.nameofSinger.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+ 
+  // const filteredSong = songLists.filter(
+  //   (song) => song.title.toLowerCase().includes(searchQuery.toLowerCase()) 
+  //       ||
+  //          song.nameofSinger.toLowerCase().includes(searchQuery.toLowerCase())
+  // )
     
   return (
     <StyledHeader>
       <Container>
-        <p>Logo</p>
+    {/* <p style={{fontSize:'18px'}}>Addis Music</p> */}
+    {/* <img style={{width:'85px'}} src={logo} alt="logo" /> */}
+  <div style={{display:'flex', position:'relative',zIndex:'10',gap:'2px',alignItems:'center'}}>
+  <TbMusicHeart style={{color:'darkseagreen'}}  size={35}/>
+  <p style={{color:'darkseagreen'}}>Addis Music</p>
+  </div>
+ 
+    
+  
+
       <div style={{display:'flex', alignItems:'center', justifyContent:'center',padding:'4px'}}>
       <input
           type="text"
           value={searchQuery}
           onChange={(e) =>setSearchQuery(e.target.value)}
           placeholder="Search.."
-          style={{ border:'4px solid white', position:"relative", display:'flex', width:'20rem' }}
+          style={{ backgroundColor: "", position:"relative", display:'flex', width:'20rem' }}
         />
 
         <IoSearchCircleSharp  
         size={40}
-        style={{position:"absolute", color:'black',top:'18px', right:'33rem'}}
+        style={{position:"absolute", color:'black', top:'22px', right:'31rem'}}
         />
       </div>
         <div>
@@ -57,13 +68,13 @@ const Header = () => {
                 color: "black",
                 padding: "2px",
                 position: "absolute",
-                top: "16px",
+                top: "10px",
                 height: "20px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 width: "20px",
-                right: "48px",
+                right: "26px",
                 backgroundColor: "white",
                 borderRadius: "50%",
               }}
@@ -93,7 +104,7 @@ const Header = () => {
       </Container>
       <SearchResult>
           
-          {
+          {/* {
             searchQuery && (
               
                 filteredSong.map((song)=>(
@@ -104,7 +115,7 @@ const Header = () => {
                 ))
               
             )
-          }
+          } */}
           </SearchResult> 
     </StyledHeader>
   );

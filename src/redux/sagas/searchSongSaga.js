@@ -1,6 +1,6 @@
 import {put , takeLatest, call} from "redux-saga/effects";
 import axios from "axios";
-import  { setSearchQuery } from "./feature/searchSong";
+import  { setSearchQuery } from "../feature/searchSong";
 
 export const fetchSearchSong = () => ({
     type: 'WATCH_SEARCH_REQUEST',

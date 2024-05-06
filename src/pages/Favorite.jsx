@@ -6,8 +6,6 @@ import { useSelector } from "react-redux";
 const SongList = styled.div`
 display: grid;
 background-color: #212121;
-
-
 grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
 grid-gap: 10px;
 // color:#FFC100;

@@ -1,6 +1,6 @@
 import {put , takeLatest, call} from "redux-saga/effects";
 import axios from 'axios';
-import { SongDetailFailure, SongDetailSuccess } from "./feature/songDetailSlice";
+import { SongDetailFailure, SongDetailSuccess } from "../feature/songDetailSlice";
 
 
 export const fetchDetailSong = (id) => ({

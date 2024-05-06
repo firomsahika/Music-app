@@ -10,6 +10,8 @@ import FavBtn from '../styles/AddToFavoriite.styled';
 import { addToFavorite } from '../redux/feature/favoriteSlice';
 import FavoriteButton from './FavoriteButton';
 
+import SongCard from '../styles/songCard.styled';
+
 
 const SongList = styled.div`
 display: grid;
@@ -22,6 +24,7 @@ border-radius:40px;
 padding:5px;
 align-items:center;
 justify-content:center;
+
 img{
   object-fit:cover;
   width:192px;
@@ -45,7 +48,7 @@ const Song = ({ songData }) => {
     return (
     <div >
      <SongList>
-        <div style={{backgroundColor:'#000000',paddingLeft:'5px',display:'flex',flexDirection:'column',fontSize:'13px',borderRadius:'10px'}}>
+        <SongCard >
                 <StyledNavLink to={`/song/:${songData.id}`}>
                 <img src={songData.imageUrl} alt="photos" />
                 </StyledNavLink>
@@ -60,7 +63,7 @@ const Song = ({ songData }) => {
                 <FavoriteButton song={songData}  />
               
                 </p>
-        </div>
+        </SongCard>
       </SongList>
       </div>
     );

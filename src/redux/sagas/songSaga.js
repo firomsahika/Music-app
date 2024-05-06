@@ -1,6 +1,6 @@
 import {put , takeLatest, call, select} from "redux-saga/effects";
 import axios from 'axios';
-import { fetchSongsFailure,fetchSongsSuccess } from "./feature/songSlice";
+import { fetchSongsFailure,fetchSongsSuccess } from "../feature/songSlice";
 
 
 

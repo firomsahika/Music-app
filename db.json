@@ -9,14 +9,6 @@
       "imageUrl": "https://img.freepik.com/free-photo/passionate-black-male-singer-performing-against-red_1258-26297.jpg?t=st=1713472736~exp=1713476336~hmac=e0e38045804538e060618ae33e43b8f35836793a1dd6f5e82a76a9a402a238d6&w=826"
     },
     {
-      "id": "2",
-      "nameofSinger": "Bob Johnson",
-      "title": "Moonlight Sonata",
-      "genre": "Pop",
-      "produceddate": "2022-01-10",
-      "imageUrl": "https://img.freepik.com/free-photo/black-model-posing_23-2148171760.jpg?t=st=1713473392~exp=1713476992~hmac=e892d6a6a5ee64b507773f4390f5017851ae9a4b2f8306ddecb336e9373f2a68&w=360"
-    },
-    {
       "nameofSinger": "Josh Anvy",
       "title": "this is my titile",
       "description": "A song by josh anvy",
@@ -25,12 +17,12 @@
       "id": "5"
     },
     {
-      "id": "7",
-      "nameofSinger": "Olivia Rodriguez",
-      "title": "City Lights",
-      "genre": "Hiphop",
-      "produceddate": "2022-02-10",
-      "imageUrl": "https://img.freepik.com/free-photo/young-handsome-happy-hipster-man-listening-music_155003-28264.jpg?t=st=1713473947~exp=1713477547~hmac=29b5771556d2b79754dc4f0be7612a9013703139c47c5ab32b48d6fa22bb94e9&w=826"
+      "nameofSinger": "Jacob Morres",
+      "title": "Hello world",
+      "produceddate": "2024-06-06",
+      "description": "My song hello world ",
+      "imageUrl": "https://img.freepik.com/free-photo/portrait-man-t-shirt-with-face-mask-headphones_23-2148780079.jpg?t=st=1714951874~exp=1714955474~hmac=75eea257c86c75c7b22fdd357c674919c0c485449eae083c91f5a83cdfdcdca1&w=360",
+      "id": "7"
     },
     {
       "nameofSinger": "Drake ",
@@ -166,6 +158,18 @@
       "nameofSinger": "hey",
       "produceddate": "2024-05-02",
       "imageUrl": "https://img.freepik.com/free-photo/cool-hip-hop-young-man-white_1385-909.jpg?t=st=1714225559~exp=1714229159~hmac=ed0b425f00539891916454ddd405e0e9a366047ab9c351502a709ab6c1b310a4&w=360"
+    },
+    {
+      "id": "062d",
+      "singer": "",
+      "title": "My song",
+      "releaseDate": "",
+      "description": "This is my song ",
+      "genre": "",
+      "file": "",
+      "nameofSinger": "Josh Anvy",
+      "produceddate": "2024-05-22",
+      "imageUrl": "https://img.freepik.com/free-photo/man-with-skateboard_23-2148012853.jpg?t=st=1714951737~exp=1714955337~hmac=c09d4283bca0bba059e7c86f593e0293c6e8929039bd7e1119b9b1fe7be0ce7d&w=740"
     }
   ],
   "albums": [

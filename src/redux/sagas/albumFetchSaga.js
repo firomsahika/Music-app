@@ -1,6 +1,6 @@
 import {put , takeLatest, call, select} from "redux-saga/effects";
 import axios from 'axios';
-import { fetchAlbumFailure, fetchAlbumSuccess } from "./feature/songSlice";
+import { fetchAlbumFailure, fetchAlbumSuccess } from "../feature/songSlice";
 
 
 
@@ -10,7 +10,6 @@ export const fetchAlbumRequest = () => ({
 
 function* fetchAlbum(action){
     try{
-      // const accessToken = yield select((state)=>state.auth.accessToken);
       const response = yield call(axios.get,'http://localhost:3000/albums',{
       });
       console.log(response.data)

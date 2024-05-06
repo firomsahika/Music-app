@@ -8,13 +8,13 @@ import SongDetailReducer from "./feature/songDetailSlice"
 import updateSongReducer from "./feature/updateSongSlice"
 import searchSongReducer from "./feature/searchSong"
 import favoriteReducer from "./feature/favoriteSlice"
-import { watchFetchSongs } from "./songSaga";
-import { watchCreateSong } from "./feature/createSongSaga";
-import { watchFetchAlbums } from "./albumFetchSaga";
-import { watchSongDetail } from "./SongDetailSaga";
-import { watchDeleteSong } from "./deleteSongSaga";
-import { watchUpdateSong } from "./updateSongSaga";
-import { watchSearch } from "./searchSongSaga";
+import { watchFetchSongs } from "./sagas/songSaga";
+import { watchCreateSong } from "./sagas/createSongSaga";
+import { watchFetchAlbums } from "./sagas/albumFetchSaga";
+import { watchSongDetail } from "./sagas/SongDetailSaga";
+import { watchDeleteSong } from "./sagas/deleteSongSaga";
+import { watchUpdateSong } from "./sagas/updateSongSaga";
+import { watchSearch } from "./sagas/searchSongSaga";
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -42,5 +42,6 @@ sagaMiddleware.run(watchSongDetail);
 sagaMiddleware.run(watchDeleteSong);
 sagaMiddleware.run(watchUpdateSong);
 sagaMiddleware.run(watchSearch);
+
 
 export default store;

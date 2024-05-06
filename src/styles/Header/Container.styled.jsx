@@ -8,7 +8,11 @@ const Container = styled.div`
   justify-content: space-between;
   align-items:center;
   margin: 0 auto;
-  padding:0 40px; /* Adjusted padding */
+  padding-top:0px;
+padding-bottom:0px;
+padding-left:20px;
+padding-right:20px;
+  //padding:0 40px; /* Adjusted padding */
   background-color:#212121;
   z-index:10;
   
@@ -23,7 +27,7 @@ const Container = styled.div`
     border-radius:10px;
     font-family: "Poppins";
     display:flex;
-    background-color: #F0F0F5;
+    //background-color: #F0F0F5;
      //background-color:#FFC100;
 
     align-items:center;

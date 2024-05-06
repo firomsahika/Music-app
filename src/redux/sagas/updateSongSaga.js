@@ -1,6 +1,6 @@
 import { put,takeLatest,call } from "redux-saga/effects";
 import axios from "axios";
-import { updateSongFailure,updateSongSuccess } from "./feature/updateSongSlice";
+import { updateSongFailure,updateSongSuccess } from "../feature/updateSongSlice";
 
 export const updateSongRequest = (id,formData) => ({
     type:'UPDATE_SONG_REQUEST',

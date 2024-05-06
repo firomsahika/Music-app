@@ -1,10 +1,10 @@
 import React,{useEffect, useState} from 'react';
 import styled from 'styled-components';
 import Content from '../styles/Home/HomeContainer.styled';
-import { createSongRequest } from '../redux/feature/createSongSaga';
+import { createSongRequest } from '../redux/sagas/createSongSaga';
 import { useDispatch,useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import { updateSongRequest } from '../redux/updateSongSaga';
+import { updateSongRequest } from '../redux/sagas/updateSongSaga';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
