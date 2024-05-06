@@ -10,8 +10,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color:black;
-  
+  background-color: #212121;
   form {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
