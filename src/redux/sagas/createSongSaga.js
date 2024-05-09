@@ -13,7 +13,7 @@ export const createSongRequest = (formData) => ({
 function* createSongs(action){
     try{
       // const accessToken = yield select((state)=>state.auth.accessToken);
-      const response = yield call(axios.post, 'http://localhost:3000/tracks', action.payload);
+      const response = yield call(axios.post, 'https://json-server-ubip.onrender.com/tracks', action.payload);
       console.log(response.data)
       yield put(createSongSuccess(response.data));
 

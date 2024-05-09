@@ -10,7 +10,7 @@ export const fetchAlbumRequest = () => ({
 
 function* fetchAlbum(action){
     try{
-      const response = yield call(axios.get,'http://localhost:3000/albums',{
+      const response = yield call(axios.get,'https://json-server-ubip.onrender.com/albums',{
       });
       console.log(response.data)
       yield put(fetchAlbumSuccess(response.data));

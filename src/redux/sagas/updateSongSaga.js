@@ -11,7 +11,7 @@ function* updateSong(action){
    try {
     const {id, formData} = action.payload;
     const songId = id.replace(":", "");
-    const response = yield call(axios.put,`http://localhost:3000/tracks/${songId}`, formData)
+    const response = yield call(axios.put,`https://json-server-ubip.onrender.com/tracks/${songId}`, formData)
      yield put(updateSongSuccess(response.data))
 
    } catch (error) {

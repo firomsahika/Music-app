@@ -11,7 +11,7 @@ export const fetchSearchSong = () => ({
 function* searchSong(action){
     try {
         const {query} = action.payload;
-        const res = yield call(axios.get,`http:localhost:3000/tracks?search=${query}`)
+        const res = yield call(axios.get,`https://json-server-ubip.onrender.com/tracks?search=${query}`)
 
         yield put(setSearchQuery(res.data));
     } catch (error) {

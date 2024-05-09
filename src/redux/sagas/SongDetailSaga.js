@@ -12,7 +12,7 @@ function* fetchSong(action) {
     try {
         const  {id}  = action.payload;
         const songId = id.replace(":", "");
-        const response = yield call(axios.get,`http://localhost:3000/tracks/${songId}`);
+        const response = yield call(axios.get,`https://json-server-ubip.onrender.com/tracks/${songId}`);
 
         yield put(SongDetailSuccess(response.data));
     } catch (error) {
