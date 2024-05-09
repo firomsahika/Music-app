@@ -18,7 +18,7 @@ const Container = styled.div`
     gap:30px;
     max-width: 600px; /* Adjust max-width as needed */
     width: 100%;
-    height:71.8vh;
+    height:71.8vh;  
   }
   @media (max-width:768px){
     form{
